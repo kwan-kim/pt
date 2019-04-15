@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+.introBox{
+  width:420px;
+  min-width:320px;
+  height:320px;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #000 100%, #000 100%),
+                    linear-gradient(to bottom, #000 100%, #000 100%),
+                    linear-gradient(to right, #000 100%, #000 100%),
+                    linear-gradient(to bottom, #000 100%, #000 100%);
+  background-size:    100% 5px, 5px 100%, 100% 5px, 5px 100%;
+  background-position:    100% 0, 100% 0, 0% 100%, 0 0%;
+  -webkit-animation: drawBorder 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation: drawBorder 2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+@-webkit-keyframes drawBorder {
+    0% {
+        background-size:    0 5px, 5px 0, 0 5px, 5px 0;
+    }
+    25% {
+        background-size:    100% 5px, 5px 0, 0 5px, 5px 0;
+    }
+    50% {
+        background-size:    100% 5px, 5px 100%, 0 5px, 5px 0;
+    }
+    75% {
+        background-size:    100% 5px, 5px 100%, 100% 5px, 5px 0;
+    }
+    100% {
+        background-size:    100% 5px, 5px 100%, 100% 5px, 5px 100%;
+    }
+}
+@keyframes drawBorder {
+    0% {
+        background-size:    0 5px, 5px 0, 0 5px, 5px 0;
+    }
+    25% {
+        background-size:    100% 5px, 5px 0, 0 5px, 5px 0;
+    }
+    50% {
+        background-size:    100% 5px, 5px 100%, 0 5px, 5px 0;
+    }
+    75% {
+        background-size:    100% 5px, 5px 100%, 100% 5px, 5px 0;
+    }
+    100% {
+        background-size:    100% 5px, 5px 100%, 100% 5px, 5px 100%;
+    }
+}
+
+.textBox{
+  white-space:nowrap;
+  padding:2em 0 0 1em;
+  font-size:38px;
+  opacity:0;
+  transform: translateY(30px);
+  animation: drawText 2s cubic-bezier(.7,.35,.08,.83) 2s forwards;
+  -webkit-animation: drawText 2s cubic-bezier(.7,.35,.08,.83) 2s forwards;
+}
+@keyframes drawText {
+    0% {
+      opacity:0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity:1;
+      transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes drawText {
+    0% {
+      opacity:0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity:1;
+      transform: translateY(0px);
+    }
+}
+@media (max-width: 720px) {
+  .introBox{
+    width:320px;
+    min-width:320px;
+    height:260px;
+    padding:0px;
+    margin:6% auto;
+  }
+  .textBox{
+    padding:2.4em 0 0 1em;
+    font-size:28px;
+  }
+}
+@media (max-width: 320px) {
+    .introBox{
+      background:none;
+    }
+    .textBox{
+      padding:2.4em 0 0 1em;
+      font-size:28px;
+    }
+  }

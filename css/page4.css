@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+
+@media (max-width: 720px) {
+  .page4{
+    background:#eee;
+    padding:7rem !important;
+  }
+}

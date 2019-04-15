@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+.page2 .title{
+  position:relative; width:100%;
+  text-align:center;
+  color: white;
+  margin-top:6rem;
+  font-family: arvo;
+  text-shadow:
+  -3px -3px 0 #222,
+  3px -3px 0 #222,
+  -3px 3px 0 #222,
+  3px 3px 0 #222,
+  4px 4px 0 #fff,
+  5px 5px 0 #111,
+  6px 6px 0 #fff,
+  7px 7px 0 #fff;
+  line-height: 0.92em;
+  letter-spacing: 0.06em;
+  transform: scaleY(0.9);
+  -webkit-transform: scaleY(0.9);
+  font-size:102px;
+}
+.page2 a{
+  color: #000;
+}
+.page2 .cfImg {
+  text-align:center;
+}
+.page2 .cfImg img{
+  width:36%;
+}
+@media (max-width: 720px) {
+  .page2 .title{
+    text-align:left;
+    margin:3% 0 0 1%;
+    font-size:58px;
+  }
+  .page2 .cfImg img{
+    width:56%;
+  }
+}

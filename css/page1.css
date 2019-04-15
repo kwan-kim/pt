@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+.page1 .title{
+  position: relative;
+  width:100%;
+  margin-top:5rem;
+  text-align:center;
+  color: white;
+  font-family: arvo;
+  text-shadow:
+  -3px -3px 0 #222,
+  3px -3px 0 #222,
+  -3px 3px 0 #222,
+  3px 3px 0 #222,
+  4px 4px 0 #fff,
+  5px 5px 0 #111,
+  6px 6px 0 #fff,
+  7px 7px 0 #fff;
+  line-height: 1.1em;
+  letter-spacing: 0.06em;
+  transform:scaleY(0.9);
+  -webkit-transform: scaleY(0.9);
+  font-size:5rem;
+}
+
+.pfImg{
+  text-align:center
+}
+.pfImg img{
+  margin-top:20px;
+
+  width:82%;
+}
+@media (max-width: 720px) {
+  .page1 .title{
+    text-align:left;
+    margin:3% 0 0 2%;
+    line-height:1.5em;
+    font-size:40px ;
+  }
+
+  .page1 .pfImg img{
+    width:80%;
+  }
+}
+
