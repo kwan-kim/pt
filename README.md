@@ -6,4 +6,4 @@
 
 - JS , JQuery , CSS
 
-https://kim-kwan.github.io/PT-Portfolio/
+https://kwan-kim.github.io/pt/
