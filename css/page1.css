@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 .page1 .title{
-  position: relative;
+  position: absolute;
   width:100%;
-  margin-top:5rem;
+  top:50%;
+  transform: translateY(-50%);
   text-align:center;
   color: white;
   font-family: arvo;
@@ -18,24 +19,20 @@
   7px 7px 0 #fff;
   line-height: 1.1em;
   letter-spacing: 0.06em;
-  transform:scaleY(0.9);
-  -webkit-transform: scaleY(0.9);
   font-size:5rem;
 }
 
-.pfImg{
-  text-align:center
-}
+
 .pfImg img{
-  margin-top:20px;
+  margin-top:10px;
 
   width:82%;
 }
 @media (max-width: 720px) {
   .page1 .title{
-    text-align:left;
-    margin:3% 0 0 2%;
-    line-height:1.5em;
+    text-align: right;
+    top:20%;
+    transform: translateY(0%);
     font-size:40px ;
   }
 

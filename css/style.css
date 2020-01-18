@@ -4,7 +4,6 @@
 @import url(page2.css);
 @import url(page3.css);
 @import url(page4.css);
-@import url(page5.css);
 @import url(header.css);
 
 *{
@@ -107,9 +106,9 @@ body{
   box-shadow: 2px 2px 5px #7a7a7a;
   transition: all .1s ease-in;
 }
-.page .slideWrap li{
-  width:100%;
-  height:100%;
+.page .slideWrap ul li {
+  position: relative;
+  height:430px;
 }
 .bx-viewport{
   height:auto !important;
@@ -124,14 +123,13 @@ body{
   width:80px;
   height:60px;
   border-radius:8px;
-  background:crimson;
+  background:rgb(13, 158, 127);
   padding:8px;
   color:#fff;
   transition: all .2s ease-in-out;
 }
 .githubBtn span:hover{
-  background:lightgray;
-  color:#000;
+  background:rgb(0, 0, 0);
   padding-top:9px;
 }
 .bx-controls{
@@ -147,7 +145,6 @@ body{
 }
 .bx-prev:hover, .bx-next:hover{
   color:orange;
-  transition:.5s;
 }
 
 .slideNumber{
@@ -211,6 +208,9 @@ body{
 
 .myProfile a{
   color:#000
+}
+.txt{
+  margin-top:24px;
 }
 
 @media (max-width: 720px) {

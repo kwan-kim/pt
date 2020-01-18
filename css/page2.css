@@ -1,10 +1,12 @@
 @charset "utf-8";
 
 .page2 .title{
-  position:relative; width:100%;
+  position: absolute;
+   width:100%;
   text-align:center;
   color: white;
-  margin-top:6rem;
+  top:50%;
+  transform: translateY(-50%);
   font-family: arvo;
   text-shadow:
   -3px -3px 0 #222,
@@ -17,13 +19,9 @@
   7px 7px 0 #fff;
   line-height: 0.92em;
   letter-spacing: 0.06em;
-  transform: scaleY(0.9);
-  -webkit-transform: scaleY(0.9);
   font-size:102px;
 }
-.page2 a{
-  color: #000;
-}
+
 .page2 .cfImg {
   text-align:center;
 }
@@ -32,8 +30,9 @@
 }
 @media (max-width: 720px) {
   .page2 .title{
-    text-align:left;
-    margin:3% 0 0 1%;
+    text-align: right;
+    top:20%;
+    transform: translateY(0%);
     font-size:58px;
   }
   .page2 .cfImg img{
